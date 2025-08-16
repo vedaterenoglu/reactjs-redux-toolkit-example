@@ -1139,57 +1139,5 @@ VITE_CLERK_PUBLISHABLE_KEY=pk_test_c2V0dGxlZC10b3J0b2lzZS00OS5jbGVyay5hY2NvdW50c
 VITE_STRIPE_PUBLISHABLE_KEY=pk_test_51RZ75PGd6V04F1vrVuM04sGqwxO3Nx6EFLQ0m61pmbtcgcSPU2CGNHgZsYygBrw2mq8KM1Yna8IVxhLVK4uKa59300KUXVKqtL
 VITE_API_BASE_URL=https://portfolio-events-rest-api-i6z5q.ondigitalocean.app
 VITE_APP_NAME=Online Ticket
-VITE_APP_URL=https://reactjs-redux-thunk-example.demo.vedaterenoglu.com
+VITE_APP_URL=https://reactjs-redux-toolkit-example.demo.vedaterenoglu.com
 
-
-⏺ ✅ THE SOLUTION WITHOUT VERCEL.JSON
-
-  After deep research, here's how millions of SPAs handle Stripe without routing
-  issues:
-
-  SOLUTION: Redirect to ROOT URL with Query Parameters
-
-  Instead of:
-  const successUrl = getAppUrl(`/events/${slug}/payment-success`)
-
-  Use:
-  const successUrl = getAppUrl(`/?payment=success&event=${slug}`)
-
-  WHY THIS WORKS:
-
-  1. Root URL always exists - Vercel will ALWAYS serve / (your index.html)
-  2. No 404 possible - Root URL is guaranteed to work
-  3. React takes over - Once React loads, check query params and show appropriate
-   component
-  4. Industry standard - This is how major SPAs handle external redirects
-
-  IMPLEMENTATION:
-
-  1. Change SingleEventPage.tsx:
-  const successUrl = getAppUrl(`/?payment=success&event=${slug}`)
-  const cancelUrl = getAppUrl(`/?payment=cancel&event=${slug}`)
-
-  2. In your App.tsx or Router, check for payment params:
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search)
-    if (params.get('payment') === 'success') {
-      const eventSlug = params.get('event')
-      const sessionId = params.get('session_id')
-      // Show success component or navigate to success page
-      navigate(`/events/${eventSlug}/payment-success?session_id=${sessionId}`)
-    }
-  }, [])
-
-  ALTERNATIVE: Use Hash Routing for Payment Only
-
-  const successUrl = getAppUrl(`/#/payment-success/${slug}`)
-
-  WHY BIG COMPANIES DO THIS:
-
-  - Shopify - Redirects to root with params
-  - WooCommerce - Uses root URL with order params
-  - Many SaaS - Redirect to dashboard with success params
-
-  This avoids ALL Vercel routing issues because the root URL ALWAYS works!
-
-  STOPPED.
