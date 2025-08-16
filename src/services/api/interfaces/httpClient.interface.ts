@@ -1,6 +1,11 @@
 /**
- * HTTP Client interfaces - Type definitions for HTTP client implementation
- * Defines HttpRequestConfig, HttpResponse, HttpError, and HttpClient interfaces
+ * Type definitions for HTTP client abstraction layer
+ * 
+ * Defines: Request configuration, response structure, error handling interfaces
+ * Used in: All HTTP adapters (FetchAdapter), API facades, and services
+ * 
+ * Architecture:
+ * - SOLID: ISP (segregated interfaces), DIP (abstraction for HTTP operations)
  */
 
 export interface HttpRequestConfig {

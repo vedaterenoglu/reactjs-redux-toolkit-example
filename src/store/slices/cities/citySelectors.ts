@@ -4,9 +4,14 @@ import type { CitiesState } from '@/lib/types/city.types'
 import type { RootState } from '@/store'
 
 /**
- * City Selectors - Memoized state selectors using Reselect
- * Follows Selector Pattern for efficient state access
- * Implements memoization to prevent unnecessary re-renders
+ * Memoized city state selectors for performance-optimized data access
+ * 
+ * Provides: Computed city data with search filtering and selection state
+ * Used by: City selection components, event filtering logic
+ * 
+ * Architecture:
+ * - Patterns: Selector (state derivation), Memoization (reselect caching)
+ * - Performance: Prevents unnecessary re-renders via memoization
  */
 
 // Base selectors

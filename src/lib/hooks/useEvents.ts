@@ -1,3 +1,16 @@
+/**
+ * Custom hook for comprehensive event management with Redux Toolkit
+ * 
+ * Provides: Event fetching, filtering, searching, and pagination operations
+ * Used by: Event list pages, search components, filter controls
+ * 
+ * Features:
+ * - Auto-initialization with data fetching
+ * - Search and city filter management
+ * - Pagination state and controls
+ * - Loading and error state handling
+ */
+
 import { useCallback, useEffect } from 'react'
 
 import type { EventsQueryParams } from '@/lib/types/event.types'

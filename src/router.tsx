@@ -1,3 +1,17 @@
+/**
+ * Application routing configuration with lazy loading and code splitting
+ * 
+ * Features:
+ * - Route-level code splitting for optimal bundle sizes
+ * - Protected route authentication via Clerk
+ * - Nested routing with shared layout
+ * - Payment flow routes (success/cancel pages)
+ * 
+ * Architecture:
+ * - Patterns: Lazy loading for performance optimization
+ * - Route protection through component composition
+ */
+
 import { lazy, Suspense } from 'react'
 import { createBrowserRouter } from 'react-router-dom'
 

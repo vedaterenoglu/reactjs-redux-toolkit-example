@@ -1,3 +1,14 @@
+/**
+ * Authenticated user profile page with Clerk integration
+ * 
+ * Features:
+ * - Displays user profile information from Clerk
+ * - Sign out functionality
+ * - Navigation back to events
+ * 
+ * Protected: Only accessible when authenticated via Clerk
+ */
+
 import { SignOutButton, useUser } from '@clerk/clerk-react'
 import { Link } from 'react-router-dom'
 

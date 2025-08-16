@@ -1,6 +1,13 @@
 /**
- * PaginationControls - Navigation controls for paginated content
- * Provides previous/next buttons with Redux state management integration
+ * Pagination navigation with Redux-integrated page management
+ * 
+ * Features:
+ * - Previous/next navigation with disabled states
+ * - Current page and total pages display
+ * - Smooth scroll to top on page change
+ * - Loading state during page transitions
+ * 
+ * State: Managed via Redux events slice with selectors
  */
 
 import { useCallback, useEffect } from 'react'

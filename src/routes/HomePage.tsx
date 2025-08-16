@@ -10,14 +10,17 @@ import { useCitiesWithInit, useCitySearch } from '@/lib/hooks'
 import type { City } from '@/lib/types/city.types'
 
 /**
- * HomePage Container Component - Semantic homepage with local events discovery functionality
- *
- * Current Features:
- * - Page header with title, description, and "View All Events" CTA button
- * - Professional "View All Events" button with Calendar icon and hover animations
- * - Integrated city search functionality with real-time filtering and refresh
- * - Unified state management (loading, error, empty states) via StateFrame
- * - Responsive cities grid with scroll animations and selection
+ * Homepage with city selection for location-based event discovery
+ * 
+ * Features:
+ * - City grid with search and selection capabilities
+ * - Direct navigation to all events view
+ * - Integrated loading, error, and empty states
+ * - Auto-initialization of city data on mount
+ * 
+ * Architecture:
+ * - Patterns: Container (data orchestration), Composition (StateFrame wrapping)
+ * - State: City data managed via Redux with custom hooks
  * - Search clearing on component mount for clean initial state
  * - City selection handling (placeholder for future events navigation)
  *

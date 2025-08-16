@@ -1,6 +1,8 @@
 /**
- * Utility functions - Common utility functions for the application
- * Contains cn function for merging Tailwind CSS classes
+ * Tailwind CSS class name utilities
+ * 
+ * Provides: Class name merging with conflict resolution
+ * Used by: All components requiring dynamic className composition
  */
 
 import { clsx, type ClassValue } from 'clsx'

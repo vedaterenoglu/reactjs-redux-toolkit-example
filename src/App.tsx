@@ -1,7 +1,14 @@
 /**
- * App - Root application component
- * Sets up providers (Clerk, Redux, Theme) and router configuration
- * Handles payment redirect from Stripe
+ * Root application component with provider composition and payment redirect handling
+ * 
+ * Responsibilities:
+ * - Establishes provider hierarchy (Clerk → Redux → Theme → Router)
+ * - Intercepts Stripe payment redirects and routes to appropriate success/cancel pages
+ * - Manages application-wide context initialization
+ * 
+ * Architecture:
+ * - Patterns: Provider composition for dependency injection
+ * - SOLID: SRP (focused on app initialization and routing)
  */
 
 import { useEffect } from 'react'

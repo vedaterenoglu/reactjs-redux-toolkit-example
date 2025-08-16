@@ -1,6 +1,17 @@
 /**
- * Redux store configuration - Main store setup with persistence and middleware
- * Combines city and event reducers with Redux DevTools and persistence support
+ * Central Redux store configuration with persistence and RTK Query integration
+ * 
+ * Responsibilities:
+ * - Combines feature slices (events, cities) with RTK Query reducer
+ * - Configures Redux Persist for selective state persistence
+ * - Sets up middleware chain including RTK Query middleware
+ * - Exports typed hooks and store utilities
+ * 
+ * Architecture:
+ * - SOLID: SRP (store configuration only), OCP (extensible via slice addition)
+ * - Patterns: Facade (unified store interface), Factory (store creation)
+ * 
+ * Dependencies: Redux Toolkit, Redux Persist, RTK Query
  */
 
 import { configureStore, combineReducers } from '@reduxjs/toolkit'

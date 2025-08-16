@@ -1,7 +1,16 @@
 /**
- * Events slice using Redux Toolkit
- * Manages event data, search, selection, pagination, and caching with RTK patterns
- * Complete implementation with async thunks
+ * Event management slice with comprehensive state handling and async operations
+ * 
+ * Responsibilities:
+ * - Manages event collection with filtering, searching, and pagination
+ * - Handles prefetching queue for performance optimization
+ * - Tracks loading states and error conditions per operation
+ * - Implements page-based caching strategy
+ * 
+ * Architecture:
+ * - SOLID: SRP (event state management), OCP (extensible via reducers)
+ * - Patterns: Command (async thunks), Repository (data access abstraction)
+ * - Features: Optimistic updates, prefetch queue, granular loading states
  */
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'

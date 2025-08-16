@@ -1,3 +1,16 @@
+/**
+ * Custom hook for city management and selection
+ * 
+ * Provides: City fetching, searching, selection, and initialization
+ * Used by: City selection components, location filters
+ * 
+ * Features:
+ * - Auto-initialization with caching
+ * - Search functionality with filtering
+ * - City selection state management
+ * - Error handling with retry capability
+ */
+
 import { useCallback, useEffect } from 'react'
 
 import { useAppDispatch, useAppSelector } from '@/store'

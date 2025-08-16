@@ -21,13 +21,18 @@ import {
 } from '@/store/slices/events/eventSelectors'
 
 /**
- * EventsListPage Component - Container component for displaying events list
- *
- * Design Patterns Applied:
- * 1. **Container/Presentational Pattern**: This is a container component that:
- *    - Handles data fetching through useEvents hook
- *    - Manages loading, error, and data states
- *    - Delegates presentation to AutoResizeEventGrid component
+ * Events listing page with search, filtering, and pagination
+ * 
+ * Features:
+ * - Auto-resizing event grid with responsive layout
+ * - Search functionality with URL query parameter sync
+ * - Pagination controls with Redux state management
+ * - City-based filtering from previous navigation
+ * - Event click navigation to detail pages
+ * 
+ * Architecture:
+ * - Patterns: Container (data management), URL state synchronization
+ * - State: Events managed via Redux with pagination and filtering
  *
  * 2. **Custom Hook Pattern**: Uses useEvents for data fetching abstraction
  *

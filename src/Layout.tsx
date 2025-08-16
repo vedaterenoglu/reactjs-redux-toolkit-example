@@ -1,6 +1,12 @@
 /**
- * Layout - Main application layout component
- * Contains Navbar, main content area with Outlet, and Footer
+ * Application shell layout with consistent header and footer
+ * 
+ * Features:
+ * - Persistent navigation bar across all routes
+ * - Flexible content area via React Router Outlet
+ * - Responsive flexbox layout ensuring footer stays at bottom
+ * 
+ * Used by: Router as parent route wrapper for all pages
  */
 
 import { Outlet } from 'react-router-dom'

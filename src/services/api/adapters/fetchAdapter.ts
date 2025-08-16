@@ -6,9 +6,16 @@ import type {
 } from '../interfaces/httpClient.interface'
 
 /**
- * Fetch API adapter implementation of HttpClient interface
- * Follows Adapter Pattern to abstract HTTP implementation details
- * Enables easy switching to axios or other HTTP libraries in the future
+ * Fetch API adapter implementing standardized HTTP client interface
+ * 
+ * Responsibilities:
+ * - Wraps native fetch API with consistent interface
+ * - Handles URL construction, headers, and error responses
+ * - Provides request/response interceptor-like functionality
+ * 
+ * Architecture:
+ * - SOLID: SRP (HTTP operations), LSP (substitutable HttpClient implementation)
+ * - Patterns: Adapter (fetch API wrapping), Strategy (interchangeable HTTP implementation)
  */
 export class FetchAdapter implements HttpClient {
   private baseUrl: string

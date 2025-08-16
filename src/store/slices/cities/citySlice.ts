@@ -1,6 +1,15 @@
 /**
- * Cities slice using Redux Toolkit
- * Manages city data, search, selection, and caching with RTK patterns
+ * City management slice for location-based event filtering
+ * 
+ * Responsibilities:
+ * - Manages city collection with search and selection state
+ * - Handles async city data fetching with caching
+ * - Tracks initialization and loading states
+ * - Maintains selected city for event filtering
+ * 
+ * Architecture:
+ * - SOLID: SRP (city state only), ISP (minimal city interface)
+ * - Patterns: Repository (data fetching), State machine (loading states)
  */
 
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'

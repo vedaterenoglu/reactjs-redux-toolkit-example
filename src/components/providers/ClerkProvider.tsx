@@ -1,6 +1,10 @@
 /**
- * ClerkProvider - Authentication provider wrapper for Clerk
- * Configures Clerk authentication with publishable key from environment
+ * Clerk authentication provider wrapper with environment configuration
+ * 
+ * Provides: Authentication context for entire application
+ * Used by: App.tsx as top-level provider
+ * 
+ * Features: Environment key validation, error handling for missing configuration
  */
 
 import { ClerkProvider as ClerkReactProvider } from '@clerk/clerk-react'

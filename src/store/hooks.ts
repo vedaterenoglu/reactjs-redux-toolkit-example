@@ -1,6 +1,8 @@
 /**
- * Redux Toolkit typed hooks
- * Pre-typed versions of useDispatch and useSelector for better TypeScript integration
+ * Type-safe Redux hooks for application-wide state access
+ * 
+ * Provides: Pre-typed dispatch and selector hooks with full TypeScript inference
+ * Used by: All components requiring Redux state access or action dispatching
  */
 
 import { useDispatch, useSelector } from 'react-redux'

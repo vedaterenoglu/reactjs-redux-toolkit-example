@@ -13,9 +13,17 @@ import { FetchAdapter } from '../adapters/fetchAdapter'
 import type { HttpClient } from '../interfaces/httpClient.interface'
 
 /**
- * City API Facade - Provides simplified interface for city operations
- * Follows Facade Pattern to hide complexity of HTTP operations and validation
- * Implements business logic for city-related API calls
+ * City API facade with validation and error handling
+ * 
+ * Responsibilities:
+ * - Simplifies city API operations with clean method interfaces
+ * - Validates API responses using Zod schemas
+ * - Handles HTTP client abstraction for testability
+ * 
+ * Architecture:
+ * - SOLID: SRP (city operations only), DIP (depends on HttpClient interface)
+ * - Patterns: Facade (API complexity hiding), Adapter (HTTP client abstraction)
+ * - Singleton: Default instance exported for convenience
  */
 export class CityApiService {
   private httpClient: HttpClient

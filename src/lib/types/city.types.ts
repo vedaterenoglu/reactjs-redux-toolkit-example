@@ -1,6 +1,10 @@
 /**
- * City types and schemas - Type definitions and validation for city data
- * Includes Zod schemas, TypeScript types, API response types, and validation utilities
+ * Type definitions for city domain with runtime validation
+ * 
+ * Defines: City entities, API responses, Redux state shape
+ * Used in: City slices, selectors, API services, UI components
+ * 
+ * Features: Zod schema validation, slug sanitization, type inference
  */
 
 import { z } from 'zod'
