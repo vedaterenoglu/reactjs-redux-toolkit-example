@@ -98,9 +98,10 @@ export const SingleEventPage = () => {
         setIsProcessingPayment(true)
         setPaymentError(null)
 
-        // Construct redirect URLs for Stripe using environment configuration
-        const successUrl = getAppUrl(`/events/${slug}/payment-success`)
-        const cancelUrl = getAppUrl(`/events/${slug}/payment-cancel`)
+        // Construct redirect URLs using root with params (industry standard for SPAs)
+        // Backend will append &session_id={CHECKOUT_SESSION_ID} for Stripe
+        const successUrl = getAppUrl(`/?payment=success&event=${slug}`)
+        const cancelUrl = getAppUrl(`/?payment=cancel&event=${slug}`)
 
         // Validate payment request
         const paymentRequest = validatePaymentRequest({

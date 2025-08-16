@@ -1,0 +1,20 @@
+
+Please rephrase the prompt with generalizing. Make shorter and conscience.
+
+Include the following sections:
+
+
+MANDATORY CONSTRAINST
+🚫 FORBIDDEN
+✅ SUCCESS CRITERIA
+
+For all three sections use following style:
+
+- ✅ ........... (DO)
+- ❌ NEVER ....  (NOT DO)
+
+  VERIFICATION:
+  - [ ] .....
+  - [ ] .....
+  - [ ] .....
+  - [ ] .....

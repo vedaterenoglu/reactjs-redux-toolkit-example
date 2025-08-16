@@ -1,0 +1,55 @@
+--PROJECT ANALYSIS & PLANNING PROTOCOL
+
+OBJECTIVE
+Analyze requirements and create structured execution strategy without implementation.
+DELIVERABLES
+
+UNDERSTANDING: Summarize requirements, technologies, and constraints
+EXECUTION PLAN: Phased implementation strategy
+TODO LIST: Actionable task checklist
+STATUS: Await confirmation before proceeding
+
+MANDATORY CONSTRAINTS
+
+✅ Analyze and plan only (DO)
+✅ Create detailed execution strategy (DO)
+✅ Break down into clear phases (DO)
+❌ NEVER execute any tasks (NOT DO)
+❌ NEVER make implementation assumptions (NOT DO)
+
+VERIFICATION:
+
+ All requirements documented
+ Phased plan created
+ No execution performed
+ Awaiting confirmation status set
+
+🚫 FORBIDDEN
+
+❌ NEVER begin implementation (NOT DO)
+❌ NEVER execute file operations (NOT DO)
+❌ NEVER proceed without explicit approval (NOT DO)
+✅ Wait for "PROCEED" directive (DO)
+✅ Respond with analysis only (DO)
+
+VERIFICATION:
+
+ No code written
+ No files created/modified
+ No assumptions made
+ Explicit wait state declared
+
+✅ SUCCESS CRITERIA
+
+✅ Complete requirement analysis (DO)
+✅ Structured execution plan with phases (DO)
+✅ Actionable TODO checklist (DO)
+✅ Clear wait state declaration (DO)
+❌ NEVER skip planning details (NOT DO)
+
+VERIFICATION:
+
+ Understanding section complete
+ 4-phase execution plan provided
+ TODO checklist with specific tasks
+ Status shows "AWAITING CONFIRMATION"

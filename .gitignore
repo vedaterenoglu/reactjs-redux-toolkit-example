@@ -29,7 +29,6 @@ dist-ssr
 
 # Documentation
 src/documents/ignore
-src/mock
 CLAUDE.md
 CLAUDE2.md
 

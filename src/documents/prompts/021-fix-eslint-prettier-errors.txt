@@ -1,0 +1,47 @@
+
+
+FIX eslint/prettier ERRORS ACROSS THE PROJECT
+
+
+or 
+
+ERRORS IN THE THE FOLLOWING FILES
+
+./src/lib/utils/toast.ts
+42:1  Error: Delete `····`  prettier/prettier
+46:7  Error: Insert `;`  prettier/prettier
+76:1  Error: Delete `····`  prettier/prettier
+80:7  Error: Insert `;`  prettier/prettier
+110:1  Error: Delete `····`  prettier/prettier
+114:7  Error: Insert `;`  prettier/prettier
+144:1  Error: Delete `····`  prettier/prettier
+148:7  Error: Insert `;`  prettier/prettier
+176:1  Error: Delete `····`  prettier/prettier
+180:7  Error: Insert `;`  prettier/prettier
+207:1  Error: Delete `····`  prettier/prettier
+211:7  Error: Insert `;`  prettier/prettier
+223:1  Error: Delete `····`  prettier/prettier
+227:7  Error: Insert `;`  prettier/prettier
+
+--------------------------------------------------------------------------------
+
+FIX eslint/prettier ERRORS ACROSS THE PROJECT
+
+Implement under the following directive: 
+Mandatory Constraints:
+- ✅ FIX ONLY ONE FILE AT EACH ITERATION!!!!!!,
+- ✅ ENSURE FIXIN TYPESCRIPT ERROR DOES NOT BREAK THE FILE PIRORITY IS WORKING FILE RATHER THAN FIXING TS ERRORS,
+- ✅ CONSIDER WE HAVE CHANGED FILES AND MAYBE YOU NEED CHANGE THE EXCEPTATIONS OF THE TESTS
+- ✅ GIVE INFORMATION BEFORE EACH EXECUTION,
+- ✅ REPORT AFTER EACH EXECUTION,
+- ✅ GIVE FULL REPORT AT THE END.
+- ✅ FIX ALL TYPESCRIPT AND ESLINT/PRETTIER ERRORS OF THE CODE YOU HAVE CREATED.
+- ✅ AFTER FIXING TYPE ANY ERRORS ENSURE ALL THE TESTS PASS IN CURRENT SUIT.
+- ❌ NEVER FIX WITH BATCH ALWAYS FIX ONE BY ONE!!!!!!!!!!!!!!!!!!!!
+- ❌ NEVER LEFT BEHIND FAILNG TEST(S) IN THE CURRENT SUIT
+- ❌ NEVER REFACTOR NON-TEST FILE WITHOUT STOPPING AND ASKING FOR CONFIRMATION!!!
+- ❌ NEVER use type "any"
+- ❌ NEVER use eslint-disable
+
+
+ npx eslint . --fix

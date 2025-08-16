@@ -1,0 +1,83 @@
+
+--STRATEGIC COMPONENT DECOMPOSITION
+
+OBJECTIVE
+Decompose /categories route into maintainable, reusable, testable React components following SOLID principles.
+ANALYSIS REQUIREMENTS
+
+ASSESS: Current component structure, dependencies, complexity
+MAP: UI elements, business logic, data flow, state management
+IDENTIFY: Reusable patterns and separation opportunities
+PLAN: Component hierarchy and migration strategy
+
+DECOMPOSITION FRAMEWORK
+Component Levels
+
+ATOMIC: Buttons, inputs, badges (smallest units)
+MOLECULAR: Form fields, search bars, cards
+ORGANISM: Complete forms, data tables, panels
+TEMPLATE: Page layouts, containers
+
+Architecture Pattern
+/components/admin/city/
+├── containers/     # Business logic
+├── presentation/   # UI components
+├── atoms/         # Basic elements
+├── hooks/         # Custom hooks
+├── types/         # TypeScript interfaces
+└── utils/         # Helper functions
+MANDATORY CONSTRAINTS
+
+✅ Follow SOLID principles strictly (DO)
+✅ Create TypeScript interfaces for all props (DO)
+✅ Separate business logic from presentation (DO)
+✅ Design for testability and reusability (DO)
+❌ NEVER exceed 100 lines per component (NOT DO)
+❌ NEVER mix concerns in single component (NOT DO)
+
+VERIFICATION:
+
+ Each component has single responsibility
+ All props have TypeScript interfaces
+ Business logic isolated in hooks/containers
+ Components are independently testable
+
+🚫 FORBIDDEN
+
+❌ NEVER use prop drilling beyond 2 levels (NOT DO)
+❌ NEVER create tightly coupled components (NOT DO)
+❌ NEVER skip unit tests for components (NOT DO)
+❌ NEVER ignore accessibility standards (NOT DO)
+✅ Use composition over inheritance (DO)
+✅ Implement proper error boundaries (DO)
+
+VERIFICATION:
+
+ No prop drilling violations
+ Components work independently
+ Test coverage > 80%
+ Accessibility audit passed
+
+✅ SUCCESS CRITERIA
+
+✅ Average component size < 100 lines (DO)
+✅ Test coverage > 80% (DO)
+✅ Components reused in 2+ places (DO)
+✅ Clear separation of concerns (DO)
+✅ Performance maintained/improved (DO)
+❌ NEVER compromise code quality (NOT DO)
+
+VERIFICATION:
+
+ Component complexity metrics met
+ Test coverage report generated
+ Reusability audit completed
+ Performance benchmarks passed
+
+DELIVERABLES
+
+Component Analysis Report: Current state assessment
+Decomposition Plan: File structure and hierarchy
+Interface Definitions: All TypeScript interfaces
+Migration Timeline: Phased implementation
+Test Strategy: Unit and integration approaches

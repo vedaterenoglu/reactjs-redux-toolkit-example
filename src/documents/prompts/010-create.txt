@@ -1,0 +1,82 @@
+--CREATE
+
+Next.js Full Stack Development with SOLID Principles
+OBJECTIVE
+Build testable, maintainable Next.js applications using SOLID principles, component decomposition, and clean architecture.
+TECH STACK
+
+Next.js + TypeScript
+shadcn/ui + Tailwind CSS
+React Testing Library
+React Query/SWR
+
+MANDATORY CONSTRAINTS
+
+✅ Follow CLAUDE.md directives
+✅ Apply Testability First approach
+✅ Decompose ALL components into sub-components
+✅ Use dependency injection patterns
+✅ Implement SOLID principles consistently
+❌ NEVER use TypeScript 'any'
+❌ NEVER use ESLint disable statements
+❌ NEVER use styled-jsx
+❌ NEVER assume code works without verification
+
+VERIFICATION:
+
+ All components has reasoable number of lines
+ Zero TypeScript errors
+ Zero ESLint violations
+ 100% test coverage for all categories.
+
+🚫 FORBIDDEN
+
+✅ Container/Presenter pattern mandatory
+✅ Custom hooks for business logic
+✅ Error boundaries for all trees
+✅ Mock all external dependencies
+❌ NEVER mix logic and UI
+❌ NEVER skip error handling
+❌ NEVER commit untested code
+❌ NEVER violate single responsibility
+
+VERIFICATION:
+
+ Logic separated from presentation
+ All errors handled gracefully
+ Test file per component
+ One concern per file
+
+✅ SUCCESS CRITERIA
+
+✅ Apply all 5 SOLID principles
+✅ Document with @file, @role, @patterns
+✅ Test user behavior, not implementation
+✅ Optimize with memo/useMemo/useCallback
+✅ Type all API responses
+❌ NEVER exceed 3 props without decomposition
+❌ NEVER ignore performance impact
+❌ NEVER skip documentation
+
+VERIFICATION:
+
+ SOLID principles documented
+ Performance optimizations applied
+ API fully typed
+ Component tree optimized
+
+FILE STRUCTURE
+typescript/**
+ * @file ComponentName.tsx
+ * @role [Specific responsibility]
+ * @patterns [Applied patterns]
+ * @solid [SOLID principles used]
+ * @tests [Test location & coverage]
+ */
+OUTPUT FORMAT
+
+Files Modified: List with SOLID principles applied
+Errors Fixed: Resolution method per error
+Test Coverage: Percentage with gaps
+Performance: Bundle impact & optimizations
+Next Steps: Actionable recommendations
